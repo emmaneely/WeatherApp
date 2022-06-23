@@ -4,11 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Stratus</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<header>
+    <img id="logo" src="/assets/stratus_logo.png" alt="Stratus Logo">
+</header>
 <body>
-    <h1>Weather</h1>
+    <div id="mainCard">
+        <h1>what's your stratus?</h1>
+        <form>
+            <label for="cityInput">city: </label>
+                <input type="text" id="cityInput" placeholder="new york city" required>
+            <label for="stateInput">state: </label>
+                <input type="text" id="stateInput" placeholder="ny" maxlength="2" required>
+                <button type="search" id="searchBtn" >Search</button>
+        </form>
+        <div>
+            <p id="resultName"></p>
+            <p id="resultTemp"></p>
+            <p id="resultFeelsLike"></p>
+            <p id="resultTempMax"></p>
+            <p id="resultTempMin"></p>
+            <p id="resultWeather"></p>
+        </div>
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>
